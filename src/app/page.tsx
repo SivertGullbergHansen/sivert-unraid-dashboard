@@ -179,13 +179,7 @@ function ServerAddress({ label, address, icon, description, isUrl }: server) {
           <p className="text-sm">{description}</p>
         </div>
       </div>
-      {isUrl ? (
-        <IoOpenOutline />
-      ) : copied ? (
-        <IoCheckmarkOutline />
-      ) : (
-        <IoCopyOutline />
-      )}
+      {isUrl ? <IoCopyOutline /> : <IoOpenOutline />}
     </motion.button>
   );
 }
