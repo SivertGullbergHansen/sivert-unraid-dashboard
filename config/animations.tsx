@@ -1,20 +1,24 @@
 export const transition = { type: "spring", stiffness: 200 };
 
+// Animations
+const start = { opacity: 0.0001, y: -33 };
+const animation = { opacity: 1, y: 0 };
+const hide = {
+  opacity: 0,
+  y: 10,
+  transition: {
+    duration: 1,
+    ease: "linear",
+  },
+};
+
 export const variants = {
-  initial: { opacity: 0.0001, y: -33 },
+  initial: start,
   animate: {
-    opacity: 1,
-    y: 0,
+    ...animation,
     transition: {
       staggerChildren: 0.05,
     },
   },
-  exit: {
-    opacity: 0,
-    y: 10,
-    transition: {
-      duration: 1,
-      ease: "linear",
-    },
-  },
+  exit: hide,
 };

@@ -4,8 +4,8 @@ import { categories } from "../../lib/types";
 import { motion } from "framer-motion";
 import { transition, variants } from "../../config/animations";
 import Image from "next/image";
-import astronaut from "fluentui-emoji/icons/modern/man-astronaut-light.svg";
 import { ItemCard } from "./ItemCard";
+import { ServerIcon } from "../../config/icon";
 
 export function AppCards({
   setviewServers,
@@ -63,7 +63,7 @@ export function AppCards({
       <h1 className="font-bold text-5xl flex items-center justify-center gap-2">
         Astro{" "}
         <Image
-          src={astronaut}
+          src={ServerIcon}
           width={48}
           height={48}
           alt=""

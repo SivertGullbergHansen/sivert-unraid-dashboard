@@ -7,6 +7,9 @@ const inter = DM_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Sivert's NAS",
   description: "Welcome to Sivert's NAS!",
+  icons: {
+    icon: { url: "/icon?<generated>", type: "image/png", sizes: "32x32" },
+  },
 };
 
 export default function RootLayout({

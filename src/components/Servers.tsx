@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import astronaut from "fluentui-emoji/icons/modern/man-astronaut-light.svg";
 import { motion } from "framer-motion";
 import { transition, variants } from "../../config/animations";
 import { serverList } from "../../config/servers";
 import { ServerAddress } from "./ServerAddress";
+import { ServerIcon } from "../../config/icon";
 
 export function Servers({
   setviewServers,
@@ -32,7 +32,7 @@ export function Servers({
       <h1 className="font-bold text-5xl flex items-center justify-center gap-2">
         Servers{" "}
         <Image
-          src={astronaut}
+          src={ServerIcon}
           width={48}
           height={48}
           alt=""
