@@ -18,22 +18,13 @@ I highly recommend installing [Yarn](https://yarnpkg.com/getting-started/install
 
 ### Using Docker Image
 
-First we need to clone the project. This project includes a dockerimage, which can be built and ran to serve the web-server.
+Build image:
 
-To clone the project, use this command:
-
-```git
-git clone https://github.com/SivertGullbergHansen/sivert-unraid-dashboard.git dashboard
-cd dashboard
+```bash
+docker build -t dashboard https://github.com/SivertGullbergHansen/sivert-unraid-dashboard.git#main
 ```
 
-Next build the docker image:
-
-```docker
-docker build -t dashboard .
-```
-
-And to start a container:
+Start container:
 
 ```docker
 docker run -d -p 80:80 dashboard
