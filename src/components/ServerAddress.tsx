@@ -1,8 +1,9 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import { server } from "../lib/types";
 import { motion } from "framer-motion";
 import { variants } from "../config/animations";
-import { IoCopyOutline, IoOpenOutline } from "react-icons/io5";
+import { IoCopyOutline, IoOpenOutline, IoCheckmark } from "react-icons/io5";
 
 export function ServerAddress({
   label,
@@ -28,6 +29,8 @@ export function ServerAddress({
         isUrl
           ? (location.href = address)
           : navigator.clipboard.writeText(address);
+        console.log("yes");
+
         Setcopied(true);
       }}
       whileTap={{ scale: 0.95, transition: { type: "spring", stiffness: 200 } }}
@@ -40,7 +43,7 @@ export function ServerAddress({
           <p className="text-sm">{description}</p>
         </div>
       </div>
-      {isUrl ? <IoCopyOutline /> : <IoOpenOutline />}
+      {copied ? <IoCheckmark /> : isUrl ? <IoOpenOutline /> : <IoCopyOutline />}
     </motion.button>
   );
 }
