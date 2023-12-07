@@ -18,7 +18,8 @@ This is a dashboard created for my NAS. It is a simple NextJs project built with
 + Environment variables for better configuration
 + Status symbol for each app (online/offline)
 + Unraid community app for easy installation
-+ CMS (A dashboard where you can customize your dashboard👀)
++ CMS (A content management system where you can customize your dashboard👀)
++ Database support (Goes hand in hand with CMS)
 
 ## Configuration ⚙️
 
