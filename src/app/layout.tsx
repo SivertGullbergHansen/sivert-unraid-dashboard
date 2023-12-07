@@ -3,12 +3,13 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { ServerIcon } from "@/config/icon";
 import Head from "next/head";
+import { info } from "@/config/info";
 
 const inter = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sivert's NAS",
-  description: "Welcome to Sivert's NAS!",
+  title: info.server_name,
+  description: info.description,
   icons: [
     {
       url: ServerIcon.src,

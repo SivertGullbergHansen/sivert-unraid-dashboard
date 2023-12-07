@@ -6,7 +6,7 @@ import { transition, variants } from "../config/animations";
 import Image from "next/image";
 import { ItemCard } from "./ItemCard";
 import { ServerIcon } from "../config/icon";
-import info from "../config/info.json";
+import { info } from "../config/info";
 
 export function AppCards({
   setviewServers,
