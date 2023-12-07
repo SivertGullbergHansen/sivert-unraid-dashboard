@@ -8,12 +8,6 @@ This is a dashboard created for my NAS. It is a simple NextJs project built with
 
 It can be hosted as a serverless website, and the most simple method is to open a terminal and run the serve command after installing dependencies.
 
-## Requirements
-
-This project requires NodeJs. Get it [here](https://nodejs.org/en/download/).
-
-I highly recommend installing [Yarn](https://yarnpkg.com/getting-started/install) (an alternate package manager to npm).
-
 ## Getting Started
 
 ### Using Docker Image
@@ -29,6 +23,15 @@ Start container:
 ```docker
 docker run -d -p 80:80 dashboard
 ```
+
+### Manual
+
+#### Requirements
+
+This project requires NodeJs. Get it [here](https://nodejs.org/en/download/).
+
+I highly recommend installing [Yarn](https://yarnpkg.com/getting-started/install) (an alternate package manager to npm).
+
 
 #### 1. Install dependencies
 
