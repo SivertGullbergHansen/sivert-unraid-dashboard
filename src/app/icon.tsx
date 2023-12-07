@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { ServerIcon } from "../../config/icon";
+import { ServerIcon } from "../config/icon";
 
 // Route segment config
 export const runtime = "edge";

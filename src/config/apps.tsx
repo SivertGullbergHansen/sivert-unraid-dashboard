@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { categories, linkDataType } from "../lib/types";
-import minecraft from "../src/components/Chest.gif";
-import plex from "../src/components/plex.png";
-import sd from "../src/components/sd.svg";
-import Overseerr from "../src/components/Overseerr.png";
+import minecraft from "../components/Chest.gif";
+import plex from "../components/plex.png";
+import sd from "../components/sd.svg";
+import Overseerr from "../components/Overseerr.png";
 
 export const linksData: linkDataType[] = [
   {

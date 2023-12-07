@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { linksData } from "../../config/apps";
-import { categories } from "../../lib/types";
+import { linksData } from "../config/apps";
+import { categories } from "../lib/types";
 import { motion } from "framer-motion";
-import { transition, variants } from "../../config/animations";
+import { transition, variants } from "../config/animations";
 import Image from "next/image";
 import { ItemCard } from "./ItemCard";
-import { ServerIcon } from "../../config/icon";
+import { ServerIcon } from "../config/icon";
+import info from "../config/info.json";
 
 export function AppCards({
   setviewServers,
@@ -61,7 +62,7 @@ export function AppCards({
       className="p-24 pt-96 flex flex-col gap-6 items-center justify-start"
     >
       <h1 className="font-bold text-5xl flex items-center justify-center gap-2">
-        Astro{" "}
+        {info.server_name}{" "}
         <Image
           src={ServerIcon}
           width={48}

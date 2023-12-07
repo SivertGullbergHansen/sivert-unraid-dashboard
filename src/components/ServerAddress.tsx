@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { server } from "../../lib/types";
+import { server } from "../lib/types";
 import { motion } from "framer-motion";
-import { variants } from "../../config/animations";
+import { variants } from "../config/animations";
 import { IoCopyOutline, IoOpenOutline } from "react-icons/io5";
 
 export function ServerAddress({

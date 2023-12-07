@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import { transition, variants } from "../../config/animations";
-import { serverList } from "../../config/servers";
+import { transition, variants } from "../config/animations";
+import { serverList } from "../config/servers";
 import { ServerAddress } from "./ServerAddress";
-import { ServerIcon } from "../../config/icon";
+import { ServerIcon } from "../config/icon";
 
 export function Servers({
   setviewServers,
