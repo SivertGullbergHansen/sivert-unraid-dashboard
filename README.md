@@ -16,6 +16,7 @@ This is a dashboard created for my NAS. It is a simple NextJs project built with
 ## Wishlist 🤞
 
 + Responsive design
++ HTTPS
 + Environment variables for better configuration
 + Status symbol for each app (online/offline)
 + Unraid community app for easy installation
