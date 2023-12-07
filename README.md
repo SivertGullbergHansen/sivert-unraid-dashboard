@@ -1,18 +1,33 @@
 <img src="assets/preview.png" align="center" alt="Preview of website" />
 
-# Astro Dashboard
+# Astro 👨‍🚀
 
-## Introduction
+## Introduction 👋
 
 This is a dashboard created for my NAS. It is a simple NextJs project built with Typescript, Tailwind and framer-motion.
 
-## Configuration
+## Features ✨
+
++ A grid of apps
++ A server list
++ Smooth animations
++ Beautiful styling
+
+## Wishlist 🤞
+
++ Environment variables for better configuration
++ Status symbol for each app (online/offline)
++ Unraid community app for easy installation
++ CMS (A content management system where you can customize your dashboard👀)
++ Database support (Goes hand in hand with CMS)
+
+## Configuration ⚙️
 
 Environment Variables will be added for further customization.
 
-## Getting Started
+## Getting Started 🏃‍♂️
 
-### Using Docker Image
+### Using Docker Image 🐳
 
 Build image:
 
@@ -26,9 +41,9 @@ Start container:
 docker run -d -p 80:80 dashboard
 ```
 
-### Manual
+### Manual 🤓
 
-#### Requirements
+#### Requirements 📋
 
 This project requires NodeJs. Get it [here](https://nodejs.org/en/download/).
 
