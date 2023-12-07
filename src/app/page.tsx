@@ -8,11 +8,7 @@ import plex from "../components/plex.png";
 import sd from "../components/sd.svg";
 import Overseerr from "../components/Overseerr.png";
 import { AnimatePresence, motion } from "framer-motion";
-import {
-  IoCopyOutline,
-  IoOpenOutline,
-  IoCheckmarkOutline,
-} from "react-icons/io5";
+import { IoCopyOutline, IoOpenOutline } from "react-icons/io5";
 
 export type linkDataType = {
   title: string;
@@ -128,7 +124,7 @@ const serverList: server[] = [
   },
 ];
 
-export const transition = { type: "spring", stiffness: 200 };
+const transition = { type: "spring", stiffness: 200 };
 
 export const demoVariants = {
   initial: { opacity: 0.0001, y: -33 },
