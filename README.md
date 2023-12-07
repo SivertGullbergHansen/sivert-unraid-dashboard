@@ -8,36 +8,30 @@ This is a dashboard created for my NAS. It is a simple NextJs project built with
 
 It can be hosted as a serverless website, and the most simple method is to open a terminal and run the serve command after installing dependencies.
 
-## Requirements
+## Getting Started
+
+### Using Docker Image
+
+Build image:
+
+```bash
+docker build -t dashboard https://github.com/SivertGullbergHansen/sivert-unraid-dashboard.git#main
+```
+
+Start container:
+
+```docker
+docker run -d -p 80:80 dashboard
+```
+
+### Manual
+
+#### Requirements
 
 This project requires NodeJs. Get it [here](https://nodejs.org/en/download/).
 
 I highly recommend installing [Yarn](https://yarnpkg.com/getting-started/install) (an alternate package manager to npm).
 
-## Getting Started
-
-### Using Docker Image
-
-First we need to clone the project. This project includes a dockerimage, which can be built and ran to serve the web-server.
-
-To clone the project, use this command:
-
-```git
-git clone https://github.com/SivertGullbergHansen/sivert-unraid-dashboard.git dashboard
-cd dashboard
-```
-
-Next build the docker image:
-
-```docker
-docker build -t dashboard .
-```
-
-And to start a container:
-
-```docker
-docker run -d -p 80:80 dashboard
-```
 
 #### 1. Install dependencies
 
