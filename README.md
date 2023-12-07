@@ -16,7 +16,30 @@ I highly recommend installing [Yarn](https://yarnpkg.com/getting-started/install
 
 ## Getting Started
 
-### 1. Install dependencies
+### Using Docker Image
+
+First we need to clone the project. This project includes a dockerimage, which can be built and ran to serve the web-server.
+
+To clone the project, use this command:
+
+```git
+git clone https://github.com/SivertGullbergHansen/sivert-unraid-dashboard.git dashboard
+cd dashboard
+```
+
+Next build the docker image:
+
+```docker
+docker build -t dashboard .
+```
+
+And to start a container:
+
+```docker
+docker run -d -p 80:80 dashboard
+```
+
+#### 1. Install dependencies
 
 npm
 
@@ -30,7 +53,7 @@ Yarn
 yarn
 ```
 
-### 2. Build and serve project
+#### 2. Build and serve project
 
 npm
 
