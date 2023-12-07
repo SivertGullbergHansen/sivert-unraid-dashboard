@@ -6,7 +6,9 @@
 
 This is a dashboard created for my NAS. It is a simple NextJs project built with Typescript, Tailwind and framer-motion.
 
-It can be hosted as a serverless website, and the most simple method is to open a terminal and run the serve command after installing dependencies.
+## Configuration
+
+Environment Variables will be added for further customization.
 
 ## Getting Started
 
