@@ -1,17 +1,20 @@
 import React, { useState } from "react";
-import { linksData } from "../config/apps";
-import { categories } from "../lib/types";
+import { categories, linkDataType } from "../lib/types";
 import { motion } from "framer-motion";
 import { transition, variants } from "../config/animations";
 import Image from "next/image";
 import { ItemCard } from "./ItemCard";
-import { ServerIcon } from "../config/icon";
-import { info } from "../config/info";
 
 export function AppCards({
   setviewServers,
+  ServerIcon,
+  linksData,
+  ServerName,
 }: {
   setviewServers: (newValue: boolean) => void;
+  ServerIcon: any;
+  linksData: linkDataType[];
+  ServerName: string;
 }) {
   const [selectedFilter, setselectedFilter] = useState<string>("all");
   const [filters, setfilters] = useState<string[]>(["all"]);
@@ -62,7 +65,7 @@ export function AppCards({
       className="p-24 flex flex-col gap-6 items-center justify-start"
     >
       <h1 className="font-bold text-5xl flex items-center justify-center gap-2">
-        {info.server_name}{" "}
+        {ServerName ? `${ServerName} ` : null}
         <Image
           src={ServerIcon}
           width={48}

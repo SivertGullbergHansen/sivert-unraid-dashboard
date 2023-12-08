@@ -2,14 +2,17 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { transition, variants } from "../config/animations";
-import { serverList } from "../config/servers";
 import { ServerAddress } from "./ServerAddress";
-import { ServerIcon } from "../config/icon";
+import { server } from "@/lib/types";
 
 export function Servers({
   setviewServers,
+  ServerIcon,
+  serverList,
 }: {
   setviewServers: (newValue: boolean) => void;
+  ServerIcon: any;
+  serverList: server[];
 }) {
   return (
     <motion.div
