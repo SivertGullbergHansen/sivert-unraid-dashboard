@@ -27,7 +27,7 @@ export function Servers({
           ease: "linear",
         },
       }}
-      className="p-24 pt-96 flex flex-col gap-6 items-center justify-start"
+      className="p-24 flex flex-col gap-6 items-center justify-start"
     >
       <h1 className="font-bold text-5xl flex items-center justify-center gap-2">
         Servers{" "}
