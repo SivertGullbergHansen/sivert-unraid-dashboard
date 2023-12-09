@@ -1,5 +1,7 @@
 import React from "react";
 import { IoClose } from "react-icons/io5";
+import { motion } from "framer-motion";
+import { variants } from "@/config/animations";
 
 function InputSetting({
   label,
@@ -31,7 +33,10 @@ function InputSetting({
 
 export function Settings({ setShow }: { setShow: (n: boolean) => void }) {
   return (
-    <div className="fixed top-0 left-0 right-0 bottom-0 z-10 bg-base/50 backdrop-blur flex items-center justify-center">
+    <motion.div
+      {...variants}
+      className="fixed top-0 left-0 right-0 bottom-0 z-10 bg-base/50 backdrop-blur flex items-center justify-center"
+    >
       <div className="p-12 w-[800px] h-2/3 flex flex-col gap-4 bg-base-2 rounded-lg relative">
         <button
           onClick={() => setShow(false)}
@@ -47,6 +52,6 @@ export function Settings({ setShow }: { setShow: (n: boolean) => void }) {
           setValue={() => {}}
         />
       </div>
-    </div>
+    </motion.div>
   );
 }

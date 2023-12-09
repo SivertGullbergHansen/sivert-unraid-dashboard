@@ -10,12 +10,12 @@ import { info } from "@/config/info";
 import { Settings } from "@/components/Settings";
 import { IoSettings } from "react-icons/io5";
 
-export default function Home() {
+function App() {
   const [viewServers, setviewServers] = useState(false);
   const [showSettings, setshowSettings] = useState(false);
 
   return (
-    <AnimatePresence mode="wait">
+    <>
       {viewServers ? (
         <Servers
           serverList={serverList}
@@ -37,6 +37,14 @@ export default function Home() {
         <IoSettings className="w-4 h-4" />
       </button>
       {showSettings && <Settings setShow={setshowSettings} />}
+    </>
+  );
+}
+
+export default function Home() {
+  return (
+    <AnimatePresence mode="wait">
+      <App />
     </AnimatePresence>
   );
 }

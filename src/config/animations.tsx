@@ -9,6 +9,7 @@ const hide = {
   transition: {
     duration: 1,
     ease: "linear",
+    when: "afterChildren",
   },
 };
 
@@ -18,6 +19,7 @@ export const variants = {
     ...animation,
     transition: {
       staggerChildren: 0.05,
+      when: "beforeChildren",
     },
   },
   exit: hide,
